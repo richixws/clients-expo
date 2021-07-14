@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+    <springProperty scope="context" name="infoProjectVersion" source="spring.application.name"/>
+
+<!--    <appender name="STASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+       &lt;!&ndash;  <destination>${LOGSTASH_SOCKET}</destination> &ndash;&gt;
+        <destination>localhost:5000</destination>
+
+        <encoder
+                class="pe.com.alicorp.skynet.core.starter.logstash.logback.encoder.LoggingEventCompositeJsonObfuscatorEncoder">
+            <providers>
+                <timestamp/>
+                <mdc/> &lt;!&ndash; MDC variables on the Thread will be written as JSON fields &ndash;&gt;
+                <context/> &lt;!&ndash;Outputs entries from logback's context &ndash;&gt;
+                <version/> &lt;!&ndash; Logstash json format version, the @version field in the output &ndash;&gt;
+                <logLevel/>
+                <loggerName/>
+
+                <pattern>
+                    &lt;!&ndash; we can add some custom fields to be sent with all the log entries. &ndash;&gt;
+                    &lt;!&ndash;make filtering easier in Logstash &ndash;&gt;
+                    &lt;!&ndash;or searching with Kibana &ndash;&gt;
+                    <pattern>
+                        {
+                        "event-emitter":"${EVENT_EMITTER_LOG}",
+                        "project-name": "${PROJECT_NAME}",
+                        "product-name": "${PRODUCT_NAME}",
+                        "environment": "${SPRING_PROFILES_ACTIVE}",
+                        "component-name": "${springAppName}",
+                        "component-version": "${infoProjectVersion}"
+                        }
+                    </pattern>
+                </pattern>
+
+                <threadName/>
+                <message/>
+
+                <logstashMarkers/> &lt;!&ndash; Useful so we can add extra information for specific log lines as Markers &ndash;&gt;
+                <arguments/> &lt;!&ndash;or through StructuredArguments &ndash;&gt;
+
+                <stackTrace/>
+            </providers>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger{36}.%M - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ASYNC" class="reactor.logback.AsyncAppender">
+        &lt;!&ndash; <appender-ref ref="STASH"/> &ndash;&gt;
+             <appender-ref ref="STDOUT"/>
+    </appender>
+
+    &lt;!&ndash;   <root level="#logback.loglevel#"> &ndash;&gt;
+    <root level="INFO">
+        &lt;!&ndash; <appender-ref ref="ASYNC"/> &ndash;&gt;
+            <appender-ref ref="STDOUT"/>
+    </root>-->
+
+    <logger name="pe.com.alicorp.skynet" level="INFO"/>
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+</configuration>

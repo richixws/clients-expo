@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>pe.com.alicorp.services</groupId>
+        <artifactId>skynet-services-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>pe.alicorp.skn.services.exp</groupId>
+    <artifactId>meteoro-exp-clients</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>${project.artifactId}</name>
+    <description>Listas clientes por vendedor</description>
+
+    <inceptionYear>2020</inceptionYear>
+
+<!--    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>https://nexus.devops.alicorp.cloud/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <name>maven-snapshots</name>
+            <url>https://nexus.devops.alicorp.cloud/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://nexus.devops.alicorp.cloud/repository/maven-public/</url>
+        </repository>
+    </repositories>-->
+
+    <organization>
+        <name>Alicorp Perú</name>
+        <url>https://www.alicorp.com.pe/pe/es/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>kflorest</id>
+            <name>Kevin Flores Tarmeño</name>
+            <email>kflorest@everis.com</email>
+            <organization>Alicorp Perú</organization>
+            <timezone>America/Lima</timezone>
+            <roles>
+                <role>Backend Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>pe.com.alicorp.skynet</groupId>
+            <artifactId>skynet-core-starter-web</artifactId>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>pe.com.alicorp.skynet</groupId>
+            <artifactId>skynet-core-starter-test</artifactId>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>pe.com.alicorp.skynet</groupId>
+            <artifactId>skynet-core-starter-log-ofuscator</artifactId>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>

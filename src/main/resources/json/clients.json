@@ -1,0 +1,47 @@
+ [
+   {
+     "clientId": 1,
+     "name": "PAPITAS SAC",
+     "contactName": "LUIS PEREZ",
+     "address": "LIMA",
+     "phoneNumber": "123456789",
+     "businessRuc": "20000000",
+     "businessName": "papitas sac",
+     "segment": "A",
+     "availableBalance": 20,
+     "totalDebt": 20,
+     "clientDebt": 20,
+     "advanceSale": 20,
+     "photo": "string"
+   },
+   {
+     "clientId": 1,
+     "name": "PAPITAS SAC",
+     "contactName": "LUIS PEREZ",
+     "address": "LIMA",
+     "phoneNumber": "123456789",
+     "businessRuc": "20000000",
+     "businessName": "papitas sac",
+     "segment": "A",
+     "availableBalance": 20,
+     "totalDebt": 20,
+     "clientDebt": 20,
+     "advanceSale": 20,
+     "photo": "string"
+   },
+   {
+     "clientId": 1,
+     "name": "PAPITAS SAC",
+     "contactName": "LUIS PEREZ",
+     "address": "LIMA",
+     "phoneNumber": "123456789",
+     "businessRuc": "20000000",
+     "businessName": "papitas sac",
+     "segment": "A",
+     "availableBalance": 20,
+     "totalDebt": 20,
+     "clientDebt": 20,
+     "advanceSale": 20,
+     "photo": "string"
+   }
+ ]

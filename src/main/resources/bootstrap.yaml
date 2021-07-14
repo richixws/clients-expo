@@ -1,0 +1,26 @@
+application:
+  skynet:
+    api:
+      path: /channel/meteoro/v1.0/clients
+
+
+spring:
+  application:
+    name: meteoro-exp-clients
+  main:
+    allow-bean-definition-overriding: true
+
+info:
+  project:
+    version: 1.0.0
+    title: meteoro-exp-clients
+    description: Listar Clientes por vendedor
+
+#server:
+ # port: 8084
+
+#api_type: "experience"
+api_type: "support"
+product: "skynet-devops"
+
+

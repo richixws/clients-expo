@@ -1,0 +1,5 @@
+
+
+${AnsiColor.BRIGHT_RED} :: Skynet 🤓  :: Running Spring Boot ${spring-boot.version} ::
+:: Micro-Service ${spring.application.name} version ${info.project.version} ::
+:: Alicorp - Skynet ::${AnsiColor.WHITE}
